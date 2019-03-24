@@ -6,10 +6,23 @@
     Python Version: 3.7
 """
 
-import plotly
-import plotly.graph_objs as go
+import sys
+import os
+import csv
+import xml.etree.ElementTree as ET
 
-plotly.offline.plot({
-    "data": [go.Scatter(x=[1, 2, 3, 4], y=[4, 3, 2, 1])],
-    "layout": go.Layout(title="hello world")
-}, auto_open=True)
+# Set Working Directory
+cd = os.path.dirname(os.path.abspath("C:\\Users\\Harvey\\Dropbox\\Projects\\heatmap\\data\\activities\\2132509368.tcx"))
+
+# Read TCX File
+tcx_file = ET.parse(open("C:\\Users\\Harvey\\Dropbox\\Projects\\heatmap\\data\\activities\\2132509368.tcx").readlines())
+
+# Set columns
+
+dom = lxml.etree.parse(os.path.join(cd, tcx_file))
+
+
+
+
+
+
