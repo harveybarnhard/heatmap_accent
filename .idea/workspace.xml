@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="665702f6-7344-41eb-9520-1f10fd9a3ee9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fit_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/fit_converter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fit_converter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+            <state relative-caret-position="240">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#155#183#0" expanded="true" />
               </folding>
@@ -57,9 +58,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="170" />
-    <option name="y" value="50" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="507" />
+    <option name="y" value="37" />
     <option name="width" value="3500" />
     <option name="height" value="2060" />
   </component>
@@ -104,7 +105,7 @@
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="C:/Program Files/R/R-3.5.3/bin/x64/Rgui.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -199,9 +200,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
+    <frame x="716" y="32" width="1400" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23474178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26080477" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -210,11 +212,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931727" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32931727" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50167674" side_tool="true" weight="0.32931727" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.49832326" visible="true" weight="0.45247656" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49925485" weight="0.32853025" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49925485" weight="0.32853025" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32853025" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5022355" side_tool="true" weight="0.4870317" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.49776453" visible="true" weight="0.4870317" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -272,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fit_converter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        <state relative-caret-position="240">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
           <folding>
             <element signature="e#155#183#0" expanded="true" />
           </folding>

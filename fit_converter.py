@@ -1,8 +1,9 @@
 """
     File name: fit_converter.py
     Author: Harvey Barnhard
+    email: harveybarnhard@uchicago.edu
     Date created: 3/23/2019
-    Date last modified: 3/23/2019
+    Date last modified: 3/25/2019
     Python Version: 2.7
 """
 # Modules
@@ -62,4 +63,7 @@ for filename in os.listdir(path):
                     #    print ' * {}: {}'.format(field_data.name, field_data.value)
     i+=1
 
-# Create dataframe
+# Create dataframe and save as csv to working directory
+fit_data = {"LON":lon, "LAT":lat, "HRT":hrt, "DIS":dis, "TIM":tim}
+fit_df = pd.DataFrame(fit_data)
+fit_df.to_csv("fit_df.csv", sep=",", index=False)
