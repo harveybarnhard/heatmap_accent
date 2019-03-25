@@ -5,17 +5,61 @@
     Date last modified: 3/23/2019
     Python Version: 2.7
 """
-
+# Modules
 from fitparse import FitFile
 import os
 import pandas as pd
 
-# Read in .fit files
-fit_file = FitFile("C:\\Users\\Harvey\\Dropbox\\Projects\\heatmap\\data\\activities\\1850568882.fit")
+# Set working directory
+path = "C:\\Users\\Harvey\\Dropbox\\Projects\\heatmap\\data\\activities"
+os.chdir(path)
+
+# Initialize lists that will eventually be columns in a dataframe
+lat = list()
+lon = list()
+hrt = list()
+dis = list()
+tim = list()
+ind = list()
 
 # For each .fit file, obtain latitude and longitude positions, and mean
-for record in fit_file.get_messages():
-    if record.type == 'data':
-        for field_data in record:
-            if field_data.name in ["position_lat", "position_long", "heart_rate"]:
-                print ' * {}: {}'.format(field_data.name, field_data.value)
+i=1
+for filename in os.listdir(path):
+    ind.append(i)
+    if filename.endswith(".fit"):
+        fit_file = FitFile(filename)
+        for record in fit_file.get_messages():
+            if record.type == 'data':
+                lat_flag = 0
+                lon_flag = 0
+                hrt_flag = 0
+                dis_flag = 0
+                tim_flag = 0
+                for field_data in record:
+                    if field_data.name == "position_lat":
+                        lat.append(field_data.value)
+                        lat_flag = 1
+                    if field_data.name == "position_long":
+                        lon.append(field_data.value)
+                        lon_flag = 1
+                    if field_data.name == "heart_rate" and lat_flag == 1 and lon_flag == 1:
+                        hrt.append(field_data.value)
+                        hrt_flag = 1
+                    if field_data.name == "distance" and lat_flag == 1 and lon_flag == 1:
+                        dis.append(field_data.value)
+                        dis_flag = 1
+                    if field_data.name == "timestamp" and lat_flag == 1 and lon_flag == 1:
+                        tim.append(field_data.value)
+                        tim_flag = 1
+                if lat_flag == 1 and lon_flag == 1 and hrt_flag == 0:
+                    if hrt_flag == 0:
+                        hrt.append([-1])
+                    if dis_flag == 0:
+                        dis.append([-1])
+                    if tim_flag == 0:
+                        tim.append([-1])
+                    #if field_data.name in ["position_lat", "position_long", "heart_rate"]:
+                    #    print ' * {}: {}'.format(field_data.name, field_data.value)
+    i+=1
+
+# Create dataframe
