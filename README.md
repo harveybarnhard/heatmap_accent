@@ -4,7 +4,7 @@ Running/cycling events can be accented by certain criteria. In the example below
 an upper-quartile heart-rate exceeding a set threshold are colored red. All other runs are colored black.
 
 # Example
-![alt text](https://i0.wp.com/harveybarnhard.com/wp-content/uploads/2019/03/heartrate.jpg?ssl=1)
+![heatmap_picture](https://harveybarnhard.com/img/heatmap_accent-2.png)
 
 # Files
 fit_converter.py converts a set of .fit files (each file corresponding to a single event) into a .csv file where each row corresponds to
